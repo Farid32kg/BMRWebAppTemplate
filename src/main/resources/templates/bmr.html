@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BMR Calculator</title>
+</head>
+<body>
+
+<h1>BMR Calculator </h1>
+
+
+<form  action="#" th:action="@{/calculate}" th:object="${bmr}" method="post">
+    <div >
+        <label  for="age">Age</label>
+        <input type="number" id="age" name="age"  required><br>
+    </div>
+
+    <div>
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" name="gender">
+    </div>
+
+    <div>
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" name="weight">
+
+    </div>
+
+    <div>
+
+        <label for="height">Height</label>
+        <input type="number" id="height" name="height">
+
+    </div>
+
+    <div>
+        <button type="submit">Calculate</button>
+    </div>
+
+</form>
+
+</body>
+</html>
